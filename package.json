@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "DEBUG=* xvfb-run --auto-servernum --server-args='-screen 0 1024x768x24' node --harmony index.js"
+    "start": "xvfb-run --auto-servernum --server-args=\"-screen 0 1024x768x24\" node --harmony index.js > /dev/null &",
+    "windows_start": "node --harmony index.js"
   },
   "repository": {
     "type": "git",
